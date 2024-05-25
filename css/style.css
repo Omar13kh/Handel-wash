@@ -1,0 +1,237 @@
+:root {
+  --dark-color: #023047;
+  --green-color: #198754!important;
+  --yellow-color: #ffc400;
+  --section-color: #f5f5f5;
+  --background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--section-color);
+  color: var(--dark-color);
+   position: relative;
+}
+
+.navbar {
+  background-color: var(--section-color);
+}
+.navbar .navbar-toggler {
+  color: #000;
+  font-size: 25px;
+  border-color: #000;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+.navbar-brand, .nav-link {
+  color: var(--dark-color) !important;
+}
+
+.header {
+  position: relative;
+  background: url('../antony-sklivagkos-iTYShprNeRE-unsplash.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 260px 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header .container {
+  color: #fff;
+  z-index: 999;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background);
+  z-index: 1;
+}
+
+.header .content {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel {
+  width: 100%;
+  height: 95vh;
+}
+
+.carousel img {
+  width: 100%;
+  height: 98vh;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+  color: var(--dark-color);
+}
+
+
+.carousel:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+      height: auto;
+  }
+  .carousel-item img {
+      max-height: 100%;
+      width: auto;
+  }
+}
+.features .card {
+  background-color: var(--section-color);
+  border: none;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.features .card:hover {
+  transform: translateY(-10px);
+}
+
+.features .card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+.features .card .card-text {
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+.features .card i {
+  color: var(--green-color);
+  margin-bottom: 10px;
+}
+
+.testimonials .card {
+  background-color: var(--section-color);
+  border: none;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .card .card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.testimonials .card .text-warning {
+  font-size: 1.2rem;
+}
+/* .d-flex a {
+  color: var(--green-color);
+  text-decoration: none ;
+} */
+.testimonials .card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--dark-color);
+}
+
+.contact .form-control {
+  border: none;
+  border-color: var(--dark-color);
+}
+
+.contact .btn-success {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border-radius: 0;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info i {
+  color: var(--green-color);
+}
+
+.contact-info h5 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: var(--dark-color);
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 16px;
+  display: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#scroll-to-top:hover {
+  background-color: #218838;
+}
+.text-reset{
+  text-decoration: none
+  ;
+}
+footer {
+  background-color: var(--green-color);
+  color: #fff;
+  padding-top: 40px;
+}
+
+footer a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #f8f9fa;
+}
+
+footer .social-media a {
+  margin-right: 15px;
+}
+
+footer .social-media a i {
+  font-size: 24px;
+}
+
+footer .text-reset {
+  color: #fff;
+}
+
+footer .text-reset:hover {
+  color: #f8f9fa;
+}
+
+footer .container {
+  max-width: 1140px;
+}
